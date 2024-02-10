@@ -21,6 +21,7 @@ llm_embeddings = None
 # Function to initialize the language model and its embeddings
 def init_llm():
     global llm, llm_embeddings
+    # ekhane local-llm-0 connect kora jabe , i think using REST APIs with local
     # Initialize the language model with the OpenAI API key
     api_key="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"
     # ---> TODO: write your code here <----
@@ -32,7 +33,7 @@ def init_llm():
 def process_document(document_path):
     global conversation_retrieval_chain, llm, llm_embeddings
     # Load the document
-    # ---> TODO: write your code here <---
+    # ---> TODO: code here <---
     loader = PyPDFLoader(document_path)
     documents = loader.load()
     # Split the document into chunks

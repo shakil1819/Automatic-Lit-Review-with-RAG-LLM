@@ -31,4 +31,4 @@ def process_document_route():
     # TODO: Send a response indicating that the document is ready for queries --> retrun jsonify message with code 200
 
 # Run the Flask app (later you need to add "python main block" ==> if __name__ == "__main__":
-app.run(debug=True, port=8000, host='0.0.0.0')
+@app.run(debug=True, port=8000, host='0.0.0.0')
